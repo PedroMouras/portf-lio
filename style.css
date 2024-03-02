@@ -1,0 +1,1090 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    overflow-x: hidden;
+    height: 4080px;
+}
+svg{
+    position: absolute;
+    bottom: 7%;
+    rotate: 180deg;
+    width: 50px;
+    left: 50%;
+    opacity: 10%;
+}
+
+.menu{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: -10px;
+    left: -10px;
+    background-color: white;
+}
+.navbar{
+    position: absolute;
+    width: 80%;
+    right: 12%;
+    left: 60px;
+    top: 40px;
+    align-items: center;
+    text-align: right;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 999;
+}
+
+.navbar span{
+    position: absolute;
+    left: 0;
+    font-size: 40px;
+    top: -10px;
+    color: rgb(0, 128, 255);
+}
+.navbar a{
+    color: rgb(73, 73, 73);
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.navbar a:hover{
+    color: #003BAE;
+}
+
+.home {
+    position: absolute;
+    width: 100%;
+    height: 955px;
+    align-items: baseline;
+    opacity: 1; 
+    transform: translateY(-20px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+.apresentacao{
+    position: absolute;
+    bottom: 19%;
+    left: 60px;
+    width: 100%;
+    height: 200px;
+}
+.apresentacao span{
+    font-size: 87px;
+    width: 448px;
+}
+.apresentacao p{
+    font-size: 22px;
+    width: 448px;
+}
+.home img{
+    position: absolute;
+    width: 449px;
+    right: 300px;
+    top: 250px;
+    animation: swingAnimation 2s infinite linear; 
+    transform-origin: bottom center;
+    opacity: 50%;
+}
+@keyframes swingAnimation {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.01);
+        opacity: 60%;
+    }
+    100% {
+        transform: scale(1.00);
+    }
+}    
+.meio1{
+    position: absolute;
+    top: 960px;
+    border: 3px solid black;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    height: 70px;
+    border-right: none;
+    border-left: none;
+}
+.border b{
+    position: absolute;
+    left: 10%;
+    top: 5px;
+    font-size: 50px;
+    color: rgb(155, 155, 155);
+}
+.meio1 p{
+    position: absolute;
+    right: 10%;
+    top: 10px;
+}
+.work{
+    position: absolute;
+    top: 1060px;
+    width: 100%;
+    height: 955px;
+    opacity: 1; 
+    transform: translateY(-20px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+
+    /*Work*/
+.cards{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    top: 100px;
+    color: black;
+}
+.cards a{
+    color: black;
+}
+.fundo1{
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0.06%, #003BAE 99.94%);
+    width: 300px;
+    height: 383px;
+}
+
+/*Cartoes*/
+.card1{
+    position: absolute;
+    width: 300px;
+    height: 383px;
+    background-color: rgb(231, 231, 231);
+    left: -30px;
+    top: -30px;
+    transition: transform 0.5s ease;
+}
+.card1:hover{
+    transform: translate(30px,30px);
+    transition: transform 0.5s ease;
+
+}
+.card1 p{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+.card1 span{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 30px;
+}
+.card1 img{
+    top: 100px;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+}
+.card1 b{
+    position: relative;
+    bottom: -340px;
+    left: 20px;
+}
+
+.card2{
+    position: absolute;
+    width: 300px;
+    height: 383px;
+    background-color: rgb(231, 231, 231);
+    left: 370px;
+    top: -30px;
+    transition: transform 0.5s ease;
+}
+.card2:hover{
+    transform: translate(30px,30px);
+    transition: transform 0.5s ease;
+
+}
+.card2 p{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+.card2 span{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 30px;
+}
+.card2 img{
+    top: 100px;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+}
+.card2 b{
+    position: relative;
+    bottom: -340px;
+    left: 20px;
+}
+.fundo2{
+    position: absolute;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0.06%, #00AE46 99.94%);    width: 300px;
+    height: 383px;
+    left: 400px;
+    top: 0;
+    z-index: -1;
+}
+
+
+.card3{
+    position: absolute;
+    width: 300px;
+    height: 383px;
+    background-color: rgb(231, 231, 231);
+    left: 770px;
+    top: -30px;
+    transition: transform 0.5s ease;
+}
+.card3:hover{
+    transform: translate(30px,30px);
+    transition: transform 0.5s ease;
+
+}
+.card3 p{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+.card3 span{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 30px;
+}
+.card3 img{
+    top: 100px;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+}
+.card3 b{
+    position: relative;
+    bottom: -340px;
+    left: 20px;
+}
+.fundo3{
+    position: absolute;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0.06%, #ABAE00 99.94%);    width: 300px;
+    height: 383px;
+    left: 800px;
+    top: 0;
+    z-index: -1;
+}
+
+/*Skills*/
+.meio2{
+    position: absolute;
+    top: 2010px;
+    border: 3px solid black;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    height: 70px;
+    border-right: none;
+    border-left: none;
+}
+.meio2 p{
+    position: absolute;
+    right: 10%;
+    top: 10px;
+}
+.skills{
+    position: absolute;
+    top: 2090px;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    height: 955px;
+    opacity: 1; 
+    transform: translateY(-20px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+.tools{
+    position: absolute;
+    top: 15%;
+    font-size: 30px;
+    width: 100%;
+}
+.tools a{
+    top: -30px;
+    position: absolute;
+
+    width: 50%;
+    left: 280px;
+    font-size: 15px;
+    text-align: center;
+}
+.tools a b{
+    color: rgb(97, 97, 97);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f0f0f0;
+    border: 0.5px solid black;
+    margin-left: 15px;
+    transition: all 0.5s ease;
+    cursor: cell;
+ 
+}
+.tools a b:hover{
+    background-color: #003BAE;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.tecnic{
+    position: absolute;
+    top:40%;
+    font-size: 30px;
+    width: 100%;
+}
+.tecnic a{
+    top: -30px;
+    position: absolute;
+
+    width: 50%;
+    left: 280px;
+    font-size: 15px;
+    text-align: center;
+}
+.tecnic a b{
+    color: rgb(97, 97, 97);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f0f0f0;
+    border: 0.5px solid black;
+    margin-left: 15px;
+    transition: all 0.5s ease;
+    cursor: cell;
+}
+
+.tecnic a b:hover{
+    background-color: #003BAE;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+
+.competencias{
+    position: absolute;
+    top: 65%;
+    font-size: 30px;
+    width: 100%;
+}
+.competencias a{
+    top: -10px;
+    position: absolute;
+
+    width: 50%;
+    left: 280px;
+    font-size: 15px;
+    text-align: center;
+}
+.competencias a b{
+    color: rgb(97, 97, 97);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f0f0f0;
+    border: 0.5px solid black;
+    margin-left: 15px;
+    transition: all 0.5s ease;
+    cursor: cell;
+}
+
+.competencias a b:hover{
+    background-color: #003BAE;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+
+
+
+
+.meio3{
+    position: absolute;
+    top: 3040px;
+    border: 3px solid black;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    height: 70px;
+    border-right: none;
+    border-left: none;
+}
+.meio3 p{
+    position: absolute;
+    right: 10%;
+    top: 10px;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/*Sessão Sobre mim*/
+.about{
+    position: absolute;
+    top: 3045px;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    height: 955px;
+    opacity: 1; 
+    transform: translateY(-20px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+.about1 img{
+    position: absolute;
+    width: 345px;
+    top: 200px;
+    border: 5px solid black;
+}
+.about1 p{
+    word-wrap: break-word;
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    font-size: 25px;
+    left: 500px;
+}
+.about2 img{
+    position: absolute;
+    top: 200px;
+    border: 5px solid black;
+    left: 900px;
+    height: 345px;
+}
+.about3 img{
+    position: absolute;
+    top: 600px;
+    border: 5px solid black;
+    left: -50px;
+    width: 180px;
+}
+.about3 p{
+    word-wrap: break-word;
+    width: 300px;
+    position: absolute;
+    top: 600px;
+    font-size: 25px;
+    left: 300px;
+}
+.about4 img{
+    position: absolute;
+    top: 600px;
+    border: 5px solid black;
+    left: 700px;
+    width: 180px;
+}
+.about5 img{
+    position: absolute;
+    top: 600px;
+    border: 5px solid black;
+    left: 930px;
+    width: 180px;
+}
+.footer{
+    position: absolute;
+    top: 4110px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    height: 100px;
+    opacity: 1; 
+    transform: translateY(-20px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+.footer p{
+    background-color: #f0f0f0;
+    width: 160px;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid black;
+}
+.footer span{
+    position: absolute;
+    top: 25px;
+    left: 600px;
+    transition: transform 0.5s ease;
+}
+.fundo-a{
+position: absolute;
+top: 15px;
+background: linear-gradient(180deg, rgb(34, 124, 228) 0.06%, #0055ff 99.94%);
+border: none;
+width: 200px;
+padding: 10px;
+font-size: 16px;
+left: 660px;
+z-index: -1;
+}
+
+.footer span a{
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid black;
+    left: 70px;
+    top: 0px;
+    transform: translate(0px,0px);
+    transition: transform 0.5s ease;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.footer span a:hover{
+    transform: translate(-10px,-10px);
+}
+.p2{
+    position: absolute;
+    right: 100px;
+    top: 0px;
+}
+
+.projeto{
+    position: absolute;
+    top: 150px;
+    width: 60%;
+    left: 20%;
+
+}
+.titulo span{
+    color: #003BAE;
+}
+.titulo{
+    position: relative;
+    left: 20px;
+    font-size: 30px; 
+}
+.titulo p{
+    position: relative;
+    top: -10px;
+    font-size: 15px;
+}
+.tela1 {
+    width: 80%;
+    text-align: center;   
+}
+.tela1 img{
+    
+    position: relative;
+    width: 60%;
+    max-width: 300px;
+
+}
+.texto1{
+    text-align: left;
+    position: absolute;
+    width: 80%;
+    font-size: 15px;
+    left: 20px;
+    
+}
+.texto1 span{
+    color: #003BAE;
+}
+.img1{
+    display: flex;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+}
+.img2{
+    
+    position: relative;
+    top: 145px;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    text-align: center;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+
+}
+.texto2{
+    text-align: left;
+    position: absolute;
+    width: 80%;
+    font-size: 15px;
+    left: 20px;
+    
+}
+.texto2 span{
+    color: #319c00;
+}
+
+.texto3{
+    position: relative;
+    top: -400px;
+    left: 350px;
+    width: 250px;
+}
+.img4{
+    position: relative;
+    top: -320px;
+    left: 370px;
+}
+.texto4{
+    position: relative;
+    top: -750px;
+    width: 300px;
+}
+.box{
+    text-align: center;
+}
+iframe{
+    position: relative;
+    width: 400px;
+    height: 800px;
+    border-radius: 10px;
+    left: 5%;
+    top: 45px;
+}
+.plot{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    top: -60px;
+    height: 70px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    z-index: -2;
+
+}
+.api{
+    display: flex;
+}
+.ex p{
+    opacity: 1;
+}
+.textoapi{
+    position: relative;
+    left: -100px;
+    width: 80%;
+}
+.textoapi a{
+    text-decoration: none;
+    color: #003BAE;
+}
+a{
+    text-decoration: none;
+    color: #0055ff;
+}
+span{
+    color: #003BAE;
+}
+code{
+    color: #319c00;
+}
+.horizontal{
+    margin-left: 50px;
+}
+.line1{
+    margin-left: -50px;
+}
+.codes{
+    margin-left: 50px;
+}
+@media screen and (max-width: 950px) {
+    .api img{
+        display: none;
+    }
+    .api{
+        display: block;
+    }
+    .plot{
+        background-color: white;
+        z-index: 9999;
+        top: -70px;
+        height: 150px;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .horizontal-space{
+        margin-left: -70px;
+    }
+    .codes{
+        text-align: left;
+        font-size: 8px;
+    }
+    .api1{
+        
+        left: 5%;
+        width: 80%;
+        position: absolute;
+        top: 1900px;
+    }
+    .plot{
+        display: none;
+        background-color: black;
+        
+    }
+    .textoapi{
+        position: relative;
+        left: 0px;
+        width: 80%;
+    }
+    .api img{
+        display: none;
+    }
+    .textoapi p{
+        width: 90%;
+    }
+    .textoapi{
+        background-color: white;
+        width: 110%;
+        top: 900px;
+        position: absolute;
+        margin-left: 5%;
+    }
+    .textoapi img{
+        width: 90%;
+    }
+    iframe{
+        position: relative;
+        width: 100%;
+        height: 950px;
+        border-radius: 10px;
+        left: 5%;
+    }
+    .api{
+        display: block;
+    }
+    .projeto{
+        position: absolute;
+        top: 150px;
+        width: 90%;
+        left: 0;
+    
+    }
+    .texto4{
+        position: relative;
+        top: 0px;
+    }
+    .img4{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .texto3{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 250px;
+    }
+    .tela1 img{
+        left: 50%;
+        transform: translate(-50%,0%);
+
+    }
+    svg{
+        opacity: 1;
+        z-index: -1;
+    }
+    .home{
+        width: 90%;
+        left: 5%;
+    }
+    .home img{
+        position: absolute;
+        width: 50%;
+        left: 25%;
+    }
+
+    
+    .apresentacao{
+        width: 90%;
+        left: 5%;
+    }
+    .apresentacao span{
+        font-size: 50px;
+        width: 90%;
+    }
+    .apresentacao p{
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .work{
+        width: 90%;
+        left: 5%;
+    }
+    .fundo1{
+        position: absolute;
+        top: -50px;
+        width: 200px;
+        height: 260px;
+        left: 60px;
+        z-index: -1;
+    }
+    .card1{
+        width: 200px;
+        height: 260px;
+        left: 30px;
+        top: -80px;
+    }
+    .card1 span{
+        top: 15px;
+        left: 10px;
+        font-size: 20px;
+    }
+    .card1 img{
+        top: 60px;
+        width: 200px;
+        height: 150px;
+    }
+    .card1 b{
+        bottom: -215px;
+        left: 20px;
+        font-size: 16px;
+    }
+    
+    .fundo2{
+        width: 200px;
+        height: 260px;
+        left: 60px;
+        top: 260px;
+    }
+    .card2{
+        width: 200px;
+        height: 260px;
+        left: 30px;
+        top: 230px;
+    }
+    .card2 span{
+        top: 15px;
+        left: 10px;
+        font-size: 20px;
+    }
+    .card2 img{
+        top: 60px;
+        width: 200px;
+        height: 150px;
+    }
+    .card2 b{
+        bottom: -215px;
+        left: 20px;
+        font-size: 16px;
+
+    }
+    
+    .fundo3{
+        width: 200px;
+        height: 260px;
+        left: 60px;
+        top: 570px;
+    }
+    .card3{
+        width: 200px;
+        height: 260px;
+        left: 30px;
+        top: 540px;
+    }
+    .card3 span{
+        top: 15px;
+        left: 10px;
+        font-size: 20px;
+    }
+    .card3 img{
+        top: 60px;
+        width: 200px;
+        height: 150px;
+    }
+    .card3 b{
+        bottom: -215px;
+        left: 20px;
+        font-size: 16px;
+
+    }
+    
+.tools{
+    position: absolute;
+    top: 100px;
+    font-size: 30px;
+    width: 100%;
+}
+.tools a{
+    top: 50px;
+    position: absolute;
+    width: 350px;
+    left: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.tecnic{
+    position: absolute;
+    top:350px;
+    font-size: 30px;
+    width: 100%;
+}
+.tecnic a{
+    top: 50px;
+    position: absolute;
+    width: 350px;
+    left: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.competencias{
+    position: absolute;
+    top: 600px;
+    font-size: 30px;
+    width: 100%;
+}
+.competencias a{
+    top: 50px;
+    position: absolute;
+    width: 370px;
+    left: -25px;
+    font-size: 15px;
+    text-align: center;
+}
+
+    .about1 img{
+        width: 150px;
+    }
+    .about1 p{
+        top: 180px;
+        left: 180px;
+        font-size: 15px;
+        width: 40%;
+    }
+    .about2 img{
+        left: 200px;
+        top: 510px;
+        height: 150px;
+    }
+    .about3 img{
+        width: 100px;
+        top: 690px;
+        left: -5px;
+        
+    }
+    .about3 p{
+        top: 400px;
+        font-size: 15px;
+        left: 20px;
+        width: 40%;
+        
+    }
+    .about4 img{
+        width: 100px;
+        top: 690px;
+        left: 115px;
+        
+    }
+    .about5 img{
+        width: 100px;
+        top: 690px;
+        left: 235px;
+        
+    }
+    
+.footer{
+    position: absolute;
+    top: 3900px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    height: 190px;
+    opacity: 1; 
+    transform: translateY(-20px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+.footer p{
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 140px;
+    bottom: -30px;
+    padding: 10px;
+    font-size: 13px;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+.footer span{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    transition: transform 0.5s ease;
+}
+.fundo-a{
+position: absolute;
+top: 70px;
+background: linear-gradient(180deg, rgb(34, 124, 228) 0.06%, #0055ff 99.94%);
+border: none;
+width: 200px;
+padding: 10px;
+font-size: 16px;
+left: 60px;
+z-index: -1;
+}
+
+.footer span a{
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid black;
+    left: 70px;
+    top: 0px;
+    transform: translate(0px,0px);
+    transition: transform 0.5s ease;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.footer span a:hover{
+    transform: translate(-10px,-10px);
+}
+.p2{
+    position: absolute;
+    left: 200px;
+    bottom: 0px;
+}
+
+.meio1,
+.meio2,
+.meio3,
+.meio4,
+.meio5{
+width: 98%;
+left: 1%;
+    border-right: none;
+    border-left: none;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+.meio1 p,
+.meio2 p,
+.meio3 p,
+.meio4 p,
+.meio5 p{
+right: 3%;
+width: 40%;
+}
+  }

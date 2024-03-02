@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCODE PIX</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+    
+    body{
+        height: 1200px;
+    }
+    .navbar a{
+        color: rgb(0, 128, 255);
+    }
+    .horizontal-space {
+      margin-right: 30px;
+    }
+    .ex{
+        width: 300px;
+    }
+    .ex span{
+        color: blue;
+        text-align: right;
+        opacity: 0.7;
+    }
+    .api img{
+        position: absolute;
+        width: 750px;
+        left: -80px;
+        z-index: -1;
+    }
+    ul{
+        width: 80%;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="navbar">
+            <span><b><a href="/index.html">Pedro Moura</b></span>
+        </div>  
+    </a>
+    </div>
+
+    <div class="projeto" >
+        <div class="titulo">
+            <b>Integração Api PIX</b>
+            <p>Gerador de QR Code PIX <br>
+            Programado com <b>PHP</b>, <b>HTML</b> e <b>CSS</b></p>
+            <p>A ferramenta utiliza a API PIX do Banco Central, os dados são analisados e é gerado automaticamente seu QR Code PIX . 
+            </p>
+        </div>
+        
+        <div class="api">
+            <img src="/pages/midia/Design sem nome (3).png" alt="">
+            <iframe src="https://eupedromouraprojeto02.000webhostapp.com/home.php" frameborder="0">
+                
+            </iframe>
+
+            <div class="plot">
+                a
+            </div>
+
+            <div class="textoapi">
+                <h2>Como é feito?
+                    
+                </h2>
+                <p>
+                    fonte: <a href="https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/II_ManualdePadroesparaIniciacaodoPix.pdf" target="_blank">Manual de Padrões para Iniciação do Pix - </a> Banco central
+                    
+                </p>
+                <p>Essa integração foi utilizada no <a href="projeto1.html"><b>App de Pagamentos</b></a> apresentado na seção "Work".</p>
+                
+
+                <p>
+                    Existem duas meneiras de integrar o QRCODE Pix em uma aplicação:
+                    <ul>
+                        <br>
+                        <li>
+                            <b>
+                                Estático
+                            </b>
+                            <br>
+                            Gerando uma sequência de caracteres correspondente ao payload do QR Code no padrão BR code, conforme exemplo com quebra de linhas:
+                            <div class="ex">
+                                <p>
+                                    <code>
+                                        000201 <span>Payload Format Indicator</span><br>
+                                        2658 <span>Merchant Account Information</span><br>
+                                        <span class="horizontal-space"></span>0014br.gov.bcb.pix <br>
+                                        <span class="horizontal-space"></span><b>"Chave Pix"</b><br>
+                                        52040000 <span>Merchant Category Code</span><br>
+                                        5303986 <span>Transaction Currency</span><br>
+                                        5802BR <span>Country Code</span><br>
+                                        5913<b>"Nome"</b><span>Merchant Name</span><br>
+                                        6008<b>"Cidade"</b><span>Merchant City</span><br>
+                                        6207 <span>Additional Data Field Template</span><br>
+                                        <span class="horizontal-space"></span>0503<b>***</b> <br>
+                                        63041D3D <span>CRC16</span><br>
+                                    </code>
+                                    
+                                   </p>
+                            </div>
+                              
+                                    
+                                
+                            
+                        </li>
+                        <br><br>
+                        <li>
+                            <b>Dinâmico</b>
+                            <br>
+                            Semelhante ao anterior, mas com varias possibilidades novas. Sendo necessário uma integração com algum <span>Provedor de Serviços de Pagamento (PSP)</span> para validar os códigos dinamicos.
+                            <br><br>
+                            Cada cobrança deve ter um <span>txid</span> único, sendo usado também para consultar o status de pagamento caso necessário.
+
+                            <br><br>
+                            A diferença principal está no campo <span>Merchant Account Information</span> do código, que ao invés de receber a chave pix diretamente, recebe a instancia do <span>PSP</span>:
+                            <br><br>
+                            
+
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>
